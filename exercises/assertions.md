@@ -11,3 +11,5 @@ Answer the following questions:
 4. In JUnit 4, an exception was expected using the `@Test` annotation, while in JUnit 5 there is a special assertion method `assertThrows`. In your opinion, what are the advantages of this new way of checking expected exceptions?
 
 ## Answer
+
+1. float value aren't precise number and may have very little variation, a good way to test float values is to get the absolute value of the result and tolerate up to a certain treshold : assertTrue(Math.abs(3 * .4 - 1.2) < 0.000001);
