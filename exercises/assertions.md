@@ -37,3 +37,15 @@ assertSame(a,b);   // return True
     fail("Not yet implemented");
    } 
    ```
+   2. you can use fail to indicate that a test should have returned an exception
+   ```
+    @Test
+    public void expectedException() {
+     try {
+        methodThrowsException();
+        fail("Expected exception was not thrown");
+     } catch (Exception e) {
+        assertNotNull(e);
+     }
+    }
+   ```
