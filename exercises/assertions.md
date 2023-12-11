@@ -83,3 +83,5 @@ assertSame(a,b);   // return True
        //code that throws an exception   
       });
      ```
+using the method assertThrows makes the code clearer
+
