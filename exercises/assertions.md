@@ -3,7 +3,6 @@
 Answer the following questions:
 
 1. The following assertion fails `assertTrue(3 * .4 == 1.2)`. Explain why and describe how this type of check should be done.
-
 2. What is the difference between `assertEquals` and `assertSame`? Show scenarios where they produce the same result and scenarios where they do not produce the same result.
 
 3. In classes we saw that `fail` is useful to mark code that should not be executed because an exception was expected before. Find other uses for `fail`. Explain the use case and add an example.
@@ -29,3 +28,12 @@ Object b = a;
 assertEquals(a,b); // return True
 assertSame(a,b);   // return True
  ```
+
+3. the method fail has multiple functions:
+   3-1. you can use fail to indicate that a test method is not implemented yet or incomplete
+   ```
+   @Test
+   public void incompleteTest() {
+    fail("Not yet implemented");
+   } 
+   ```
