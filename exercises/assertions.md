@@ -60,3 +60,17 @@ assertSame(a,b);   // return True
     // more testing code
    }
    ```
+   4. you can use fail to fail a test when the code doesn't return or break when expected
+   ```
+   @Test
+   public void returnBefore() {
+    int value = randomInteger();
+    for (int i = 0; i < 5; i++) {
+        // returns when (value + i) is an even number
+        if ((i + value) % 2 == 0) {
+            return;
+        }
+    }
+    fail("Should have returned before");
+   }
+   ```
