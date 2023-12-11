@@ -49,3 +49,14 @@ assertSame(a,b);   // return True
      }
     }
    ```
+   3. you can use fail to stop a test when the test doesn't meet the desired condition
+   ```
+   @Test
+   public void testingCondition() {
+    int result = randomInteger();
+    if(result > Integer.MAX_VALUE) {
+        fail("Result cannot exceed integer max value");
+    }
+    // more testing code
+   }
+   ```
