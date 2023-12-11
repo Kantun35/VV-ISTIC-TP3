@@ -15,7 +15,7 @@ Answer the following questions:
 1. float values aren't precise number and may have very little variation, a good way to test float values is to get the absolute value of the result and tolerate up to a certain treshold of difference :
 ```assertTrue(Math.abs(3 * .4 - 1.2) < 0.000001);```
 
-3. assertEquals check if the values of an object are the same, as assertSame check if the two references concern the same instance of an object:
+2. assertEquals check if the values of an object are the same, as assertSame check if the two references concern the same instance of an object:
 ```
 Object a = new Object("test");
 Object b = new Object("test");
