@@ -30,7 +30,7 @@ assertSame(a,b);   // return True
  ```
 
 3. the method fail has multiple functions:
-   3-1. you can use fail to indicate that a test method is not implemented yet or incomplete
+   1. you can use fail to indicate that a test method is not implemented yet or incomplete
    ```
    @Test
    public void incompleteTest() {
