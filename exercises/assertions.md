@@ -74,3 +74,12 @@ assertSame(a,b);   // return True
     fail("Should have returned before");
    }
    ```
+4.
+   - pour Junit4 : ``` @Test(expected = NullPointerException.class) ```
+   - pour junit5 :
+     ```
+     assertThrows(NullPointerException.class,
+      ()->{
+       //code that throws an exception   
+      });
+     ```
