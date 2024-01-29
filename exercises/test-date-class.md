@@ -77,9 +77,9 @@ Use the project in [tp3-date](../code/tp3-date) to complete this exercise.
 
 2/ 3/
 
-![[Pasted image 20240129015919.png]]
+![](img/Pasted image 20240129015919.png)
 
-![[Pasted image 20240129020024.png]]
+![](img/Pasted image 20240129020024.png)
 
 The only two uncovered lines are the validity checks for the new dates in `nextDate` and `previousDate`.
 
